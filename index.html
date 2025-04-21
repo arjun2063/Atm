@@ -17,6 +17,8 @@
 
   <!-- HEADER -->
   <header>
+    <h1>👨‍👩‍👧‍👦 My Family Photo Collection</h1>
+    <button id="toggle-dark">🌙 Tab to color changes</button>
     <img src="atm=jpg.jpg" alt="Arjun" class="profile-pic">
     <h2>HELLO I AM </h2>
     <h1>Arjun Thapa Magar</h1>
@@ -117,6 +119,43 @@
       </div>
     </div>
   </section>
+
+  <section class="gallery">
+    <div class="photo-card">
+      <img src="atm=jpg.jpg" alt="Family 1" />
+      <div class="overlay">
+        <button>View Photo</button>
+      </div>
+    </div>
+
+    <div class="photo-card">
+      <img src="https://via.placeholder.com/300" alt="Family 2" />
+      <div class="overlay">
+        <button>View Photo</button>
+      </div>
+    </div>
+
+    <div class="photo-card">
+      <img src="https://via.placeholder.com/300" alt="Family 3" />
+      <div class="overlay">
+        <button>View Photo</button>
+      </div>
+    </div>
+
+    <div class="photo-card">
+      <img src="https://via.placeholder.com/300" alt="Family 4" />
+      <div class="overlay">
+        <button>View Photo</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-dark');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
   <!-- FOOTER -->
   <footer>
     <p>Thank you ❤️</p>
