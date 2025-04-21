@@ -7,7 +7,7 @@
 
 body {
   background: #f0f0f0;
-  color: #333;
+  color: #420606;
   line-height: 1.6;
 }
 
@@ -112,7 +112,7 @@ ul li i {
 
 /* Footer */
 footer {
-  background: #111;
+  background: #f71515;
   color: white;
   text-align: center;
   padding: 15px 0;
@@ -133,9 +133,33 @@ footer {
 }
 header {
   background-color: #3a3b3d;
+  color: rgb(172, 75, 75);
+  text-align: center;
+  padding: 2rem;
+}
+header {
+  background-color: #0066cc;
   color: white;
   text-align: center;
   padding: 2rem;
+  position: relative;
+}
+
+#toggle-dark {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background: #cc0a0a;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#toggle-dark:hover {
+  background: #ee0303;
 }
 
 .gallery {
@@ -189,30 +213,6 @@ header {
 
 .overlay button:hover {
   background-color: #ddd;
-}
-header {
-  background-color: #0066cc;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-}
-
-#toggle-dark {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  padding: 0.5rem 1rem;
-  background: #ffffff;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-#toggle-dark:hover {
-  background: #ddd;
 }
 
 .gallery {
