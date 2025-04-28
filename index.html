@@ -503,5 +503,35 @@
   <footer>
     <p>Thank you ❤️</p>
   </footer>
+      <style>
+  
+      .watch {
+        font-size: 60px;
+        background: #000;
+        padding: 30px 50px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px #0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="watch" id="digitalClock">00:00:00</div>
+  
+    <script>
+      function updateClock() {
+        const now = new Date();
+        let hours = now.getHours().toString().padStart(2, '0');
+        let minutes = now.getMinutes().toString().padStart(2, '0');
+        let seconds = now.getSeconds().toString().padStart(2, '0');
+        document.getElementById('digitalClock').textContent = `${hours}:${minutes}:${seconds}`;
+      }
+  
+      setInterval(updateClock, 1000);
+      updateClock(); // Initial call
+    </script>
+  
+</body>
+</html>
+
 </body>
 </html>
