@@ -414,3 +414,13 @@ footer {
       flex-direction: column;
     }
   }
+  .contactForm
+  {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*f;ex-direction:colum.*/
+  }

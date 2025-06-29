@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Arjun's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
@@ -152,137 +153,8 @@
       document.body.classList.toggle('dark-mode');
     });
   </script>
-  <!-- FOOTER -->
-   <button>USE Calculator</button>
-   <section class="calculator">
-  <style>
-    .calculator {
-      background: #2a2a3d;
-      border-radius: 20px;
-      padding: 20px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-      max-width: 350px;
-      width: 90%;
-    }
-
-    .display {
-      background: #1c1c2b;
-      color: white;
-      font-size: 2rem;
-      text-align: right;
-      padding: 15px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      word-wrap: break-word;
-    }
-
-    .buttons {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
-    }
-
-    button {
-      font-size: 1.5rem;
-      padding: 15px;
-      border: none;
-      border-radius: 12px;
-      background: #3a3a5a;
-      color: white;
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    button:hover {
-      transform: scale(1.08);
-      box-shadow: 0 0 10px #8b8bff;
-    }
-
-    button.operator {
-      background: #ff7f50;
-    }
-
-    button.operator:hover {
-      box-shadow: 0 0 10px #ffa07a;
-    }
-
-    button.equal {
-      background: #4caf50;
-      grid-column: span 2;
-    }
-
-    button.equal:hover {
-      box-shadow: 0 0 10px #66ff99;
-    }
-
-    @media (max-width: 500px) {
-      .display {
-        font-size: 1.5rem;
-      }
-
-      button {
-        font-size: 1.2rem;
-        padding: 12px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="calculator">
-    <div class="display" id="display">0</div>
-    <div class="buttons">
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="append('/')">÷</button>
-      <button onclick="append('*')">×</button>
-      <button onclick="backspace()">⌫</button>
-
-      <button onclick="append('7')">7</button>
-      <button onclick="append('8')">8</button>
-      <button onclick="append('9')">9</button>
-      <button onclick="append('-')" class="operator">−</button>
-
-      <button onclick="append('4')">4</button>
-      <button onclick="append('5')">5</button>
-      <button onclick="append('6')">6</button>
-      <button onclick="append('+')" class="operator">+</button>
-
-      <button onclick="append('1')">1</button>
-      <button onclick="append('2')">2</button>
-      <button onclick="append('3')">3</button>
-      <button onclick="calculate()" class="equal">=</button>
-
-      <button onclick="append('0')">0</button>
-      <button onclick="append('.')">.</button>
-    </div>
-  </div>
-
-  <script>
-    const display = document.getElementById('display');
-
-    function append(char) {
-      if (display.innerText === '0' && char !== '.') {
-        display.innerText = '';
-      }
-      display.innerText += char;
-    }
-
-    function clearDisplay() {
-      display.innerText = '0';
-    }
-
-    function backspace() {
-      display.innerText = display.innerText.slice(0, -1) || '0';
-    }
-
-    function calculate() {
-      try {
-        display.innerText = eval(display.innerText.replace(/×/g, '*').replace(/÷/g, '/'));
-      } catch {
-        display.innerText = 'Error';
-      }
-    }
-  </script>
-
+  
+  
    </section>
    <div class="contact-container">
     <div class="contact-left">
@@ -305,16 +177,88 @@
         <button type="submit">Send</button>
       </form>
     </div> 
-    <style>
-      * {
-      
-      }
-    </style>
 
     <audio id="eatSound" src="https://www.soundjay.com/button/sounds/button-3.mp3"></audio>
     <audio id="gameOverSound" src="https://www.soundjay.com/button/sounds/button-10.mp3"></audio>
 
-  
+  <section class="contact">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>Lorem ipsm dolor sit amet, conseceture  adioisicing elit, sed do eiusmod  tempor incididunt ut labore  at  dolore magna aliqua, ut enim ad minim veniam,</p>
+
+
+    </div>
+    <div class="container">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon"> <i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="text">
+            <h3>Addrees</h3>
+            <p>Naubahini Municipality 2 ligha pyuthan </p>
+
+          </div>
+
+        </div>
+
+        </div>
+        <div class="box">
+          <div class="icon"> <i class="fa fa-envelope-o" aria-hidden="true"></i></i></div>
+          <div class="text">
+            <h3>Email</h3>
+            <p>arjunthapamagar1000@gmail.com</p>
+
+          </div>
+
+        </div>
+        <div class="box">
+          <div class="icon"> <i class="fa fa-phone" aria-hidden="true"></i></div>
+          <div class="text">
+            <h3>Phone</h3>
+            <p>0742891753</p>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+    <div class="contactForm">
+      <form>
+        <h2>Send Message</h2>
+        <div class="inputBox">
+        <input type="text" name=""required="required">
+        <span>Ful Name</span>
+
+        </div>
+        <div class="inputBox">
+          <input type="text"name=""required="required">
+          <span>Email</span>
+
+
+        </div>
+        <div class="inputBox">
+          <input type="text"Name=""required="required">
+          <span>Your Message</span>
+        
+
+        </div>
+        <div class="inputBox">
+          <textarea required="required"></textarea>
+          <span>Type your Message...</span>
+
+        </div>
+        <div class="inputBox">
+          <input type="submit"name=""value="send">
+        </div>
+
+        </div>
+      </form>
+    </div>
+
+  </section>
   <footer>
     <p>Thank you ❤️</p>
   </footer>
